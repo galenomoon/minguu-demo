@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { stylesMock } from "@/mocks/styles-mock";
 
-export default function MultipleStyles({ search = "", isRow = false }) {
+export default function MultipleStyles({
+  search = "",
+  isRow = false,
+  setStylesIds = () => {},
+}) {
   const [selectedStyles, setSelectedStyles] = useState([]);
   const [styles, setStyles] = useState(stylesMock);
 
@@ -16,6 +20,10 @@ export default function MultipleStyles({ search = "", isRow = false }) {
     }
   }, [search]);
 
+  useEffect(() => {
+    setStylesIds(selectedStyles);
+  }, [selectedStyles]);
+
   function handleSelectStyle(style) {
     const isSelected = selectedStyles.includes(style.id);
 
@@ -27,7 +35,11 @@ export default function MultipleStyles({ search = "", isRow = false }) {
   }
 
   return (
-    <section className={`flex  gap-2 py-6 w-full h-fit ${isRow ? "!flex-no-wrap overflow-x-auto" : 'flex-wrap'}`}>
+    <section
+      className={`flex gap-2 w-full my-2 overflow-y-hidden ${
+        isRow ? "!flex-no-wrap overflow-x-auto h-[50px]" : "flex-wrap"
+      }`}
+    >
       {styles.map((style) => {
         const isSelected = selectedStyles.includes(style.id);
 

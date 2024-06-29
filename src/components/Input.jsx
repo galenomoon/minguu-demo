@@ -11,16 +11,20 @@ export default function Input({
     size: 39,
     Element: "div",
   },
+  onFocus = () => {},
+  onBlur = () => {},
 }) {
   return (
-    <div className="flex flex-col text-subtitle text-lg w-full">
+    <div className="flex flex-col text-subtitle text-lg w-full h-fit">
       <p>{label}</p>
-      <div className="flex items-center w-full justify-center border-2 p-3 rounded-full ">
+      <div className="flex items-center w-full h-[50px] justify-center border-2 p-3 rounded-full ">
         <iconProps.Element
           size={iconProps.size}
           className={iconProps.className}
         />
         <input
+          onFocus={onFocus}
+          onBlur={onBlur}
           value={value}
           onChange={onChange}
           type={isPassword ? "password" : "text"}

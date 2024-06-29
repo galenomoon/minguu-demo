@@ -20,7 +20,7 @@ export default function SelectStyle() {
       <Link href="/signup">
         <PiArrowLeftLight size={38} />
       </Link>
-      <h1 className="font-bold text-5xl">
+      <h1 className="font-semibold text-5xl">
         Selecione seu <br />
         Estilo
       </h1>
@@ -37,9 +37,9 @@ export default function SelectStyle() {
           />
         </section>
         <section className="min-h-[60dvh]">
-          <MultipleStyles search={search} />
+          <MultipleStyles />
         </section>
-        <Button href="" className="my-3">
+        <Button href="/search" className="my-3">
           Próximo
         </Button>
       </div>
