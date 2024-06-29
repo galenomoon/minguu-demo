@@ -36,8 +36,8 @@ export default function MultipleStyles({
 
   return (
     <section
-      className={`flex gap-2 w-full my-2 overflow-y-hidden ${
-        isRow ? "!flex-no-wrap overflow-x-auto h-[50px]" : "flex-wrap"
+      className={`flex gap-2 w-full my-2 ${
+        isRow ? "!flex-no-wrap overflow-x-auto h-[50px]" : "flex-wrap !h-fit"
       }`}
     >
       {styles.map((style) => {

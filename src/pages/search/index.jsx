@@ -14,6 +14,7 @@ import { ProfileIcon } from "@/components/ProfileIcon";
 
 //assets
 import logo from "../../../public/assets/mingu-black-horizontal-logo.png";
+import Link from "next/link";
 
 export default function SearchPage() {
   const [search, setSearch] = useState("");
@@ -23,7 +24,9 @@ export default function SearchPage() {
   return (
     <main className="p-3 flex flex-col h-[100dvh]">
       <header className="flex justify-between items-center py-3">
-        <Image src={logo} width={128} />
+        <Link href="/">
+          <Image src={logo} width={128} />
+        </Link>
         <ProfileIcon />
       </header>
       <Input
@@ -37,8 +40,16 @@ export default function SearchPage() {
           size: 28,
         }}
       />
-      <MultipleStyles search={search} isRow={!isFocused} setStylesIds={setStylesIds} />
-      <ProductGrid stylesIds={stylesids} />
+      <MultipleStyles
+        search={search}
+        isRow={!isFocused}
+        setStylesIds={setStylesIds}
+      />
+      {
+        !isFocused 
+        ? <ProductGrid stylesIds={stylesids} />
+        : null
+      }
     </main>
   );
 }
