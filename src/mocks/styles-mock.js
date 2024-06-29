@@ -40,3 +40,33 @@ export const stylesMock = [
   { id: 39, name: "Rockabilly 🎤" },
   { id: 40, name: "Lingerie 👙" }
 ];
+
+
+const products = [
+  {
+    id: 1,
+    name: "Camisa Social",
+    priceRange: "R$ 50,00 - R$ 150,00",
+    styles: [5, 14],
+    stores: [
+      {
+        id: 1,
+        name: "Renner",
+        price: "R$ 50,00",
+        image: "https://via.placeholder.com/150",
+      },
+      {
+        id: 2,
+        name: "C&A",
+        price: "R$ 70,00",
+        image: "https://via.placeholder.com/150",
+      },
+      {
+        id: 3,
+        name: "Zara",
+        price: "R$ 150,00",
+        image: "https://via.placeholder.com/150",
+      },
+    ],
+  }
+]
