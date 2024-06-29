@@ -16,7 +16,7 @@ import { PiArrowLeftLight } from "react-icons/pi";
 export default function SignUpPage() {
   return (
     <main className="p-3 flex flex-col gap-12 h-[120dvh]">
-      <Link href="/launch-screen">
+      <Link href="/">
         <PiArrowLeftLight size={38} />
       </Link>
       <h1 className="font-bold text-5xl">
