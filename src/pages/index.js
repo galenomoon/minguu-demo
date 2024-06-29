@@ -21,7 +21,7 @@ export default function Home() {
               um look de cada vez
             </p>
           </article>
-          <h1 className="font-semibold text-5xl">
+          <h1 className="font-semibold text-4xl">
             Vista-se melhor com o flamingo mais fashion do Brasil
           </h1>
         </div>
