@@ -36,7 +36,7 @@ export default function ProductPage() {
       <section className="flex text-center flex-col items-center justify-center gap-2">
         <img
           src={product?.image || 'https://via.placeholder.com/800x800.png'}
-          className="rounded-[42px] border-2 border-light-gray overflow-hidden w-full object-cover h-[400px]"
+          className="rounded-[42px] border-2 border-light-gray overflow-hidden w-full object-cover "
           alt="product"
         />
         <p className="text-2xl font-light">{product?.priceRange}</p>
