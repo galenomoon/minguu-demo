@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Camisa Aesthetic Minimalista",
     priceRange: "R$50,00\nR$120,00",
-    image: "https://i.pinimg.com/236x/f5/24/44/f5244485edf0e21086739b2f344c2ae9.jpg",
+    image: "https://i.pinimg.com/736x/f5/24/44/f5244485edf0e21086739b2f344c2ae9.jpg",
     styles: [1, 17],
     stores: [
       {
@@ -30,7 +30,7 @@ const products = [
     id: 2,
     name: "Jaqueta Emo Grunge",
     priceRange: "R$100,00\nR$200,00",
-    image: "https://i.pinimg.com/564x/bf/88/e9/bf88e945c622fff1a85c4f244e31b7aa.jpg",
+    image: "https://i.pinimg.com/736x/bf/88/e9/bf88e945c622fff1a85c4f244e31b7aa.jpg",
     styles: [3, 9],
     stores: [
       {
@@ -57,7 +57,7 @@ const products = [
     id: 3,
     name: "Vestido Boho Vintage",
     priceRange: "R$60,00\nR$130,00",
-    image: "https://i.pinimg.com/236x/c8/f2/49/c8f249621dcf61f81d60d159f38bfabe.jpg",
+    image: "https://i.pinimg.com/736x/c8/f2/49/c8f249621dcf61f81d60d159f38bfabe.jpg",
     styles: [8, 7],
     stores: [
       {
@@ -84,7 +84,7 @@ const products = [
     id: 4,
     name: "Calça Militar Street",
     priceRange: "R$50,00\nR$150,00",
-    image: "https://i.pinimg.com/236x/ab/f2/d0/abf2d0c83f0af4fefacbe38f7cfb6e0d.jpg",
+    image: "https://i.pinimg.com/736x/ab/f2/d0/abf2d0c83f0af4fefacbe38f7cfb6e0d.jpg",
     styles: [21, 2],
     stores: [
       {
@@ -111,7 +111,7 @@ const products = [
     id: 5,
     name: "Blusa Kawaii Romântica",
     priceRange: "R$30,00\nR$90,00",
-    image: "https://i.pinimg.com/236x/0e/70/84/0e70843a8653d291b181fa2df521784a.jpg",
+    image: "https://i.pinimg.com/736x/0e/70/84/0e70843a8653d291b181fa2df521784a.jpg",
     styles: [25, 20],
     stores: [
       {
@@ -138,7 +138,7 @@ const products = [
     id: 6,
     name: "Tênis Esportivo Urban",
     priceRange: "R$80,00\nR$160,00",
-    image: "https://i.pinimg.com/236x/e2/3c/05/e23c05e7e11be4309228f6b41ac25471.jpg",
+    image: "https://i.pinimg.com/736x/e2/3c/05/e23c05e7e11be4309228f6b41ac25471.jpg",
     styles: [15, 34],
     stores: [
       {
@@ -165,7 +165,7 @@ const products = [
     id: 7,
     name: "Saia Steampunk Futurista",
     priceRange: "R$70,00\nR$150,00",
-    image: "https://i.pinimg.com/236x/06/8f/f2/068ff275942989a519271651d082a3ca.jpg",
+    image: "https://i.pinimg.com/736x/06/8f/f2/068ff275942989a519271651d082a3ca.jpg",
     styles: [27, 24],
     stores: [
       {
@@ -192,7 +192,7 @@ const products = [
     id: 8,
     name: "Camisa Chic Social",
     priceRange: "R$50,00\nR$150,00",
-    image: "https://i.pinimg.com/236x/11/09/ff/1109ff0708ee646d14210ec73c9cbe15.jpg",
+    image: "https://i.pinimg.com/736x/11/09/ff/1109ff0708ee646d14210ec73c9cbe15.jpg",
     styles: [5, 19],
     stores: [
       {
@@ -219,7 +219,7 @@ const products = [
     id: 9,
     name: "Bermuda Safari Despojada",
     priceRange: "R$40,00\nR$110,00",
-    image: "https://i.pinimg.com/236x/60/8d/cb/608dcba12dd2d5aaad40e60805906157.jpg",
+    image: "https://i.pinimg.com/736x/60/8d/cb/608dcba12dd2d5aaad40e60805906157.jpg",
     styles: [31, 30],
     stores: [
       {
@@ -246,7 +246,7 @@ const products = [
     id: 10,
     name: "Camisa Rockabilly Punk",
     priceRange: "R$30,00\nR$100,00",
-    image: "https://i.pinimg.com/236x/b9/5c/0c/b95c0c7d58cd07fd17c7542ce6fb2b27.jpg",
+    image: "https://i.pinimg.com/736x/b9/5c/0c/b95c0c7d58cd07fd17c7542ce6fb2b27.jpg",
     styles: [12, 39],
     stores: [
       {
@@ -273,7 +273,7 @@ const products = [
     id: 11,
     name: "Vestido Étnico Tradicional",
     priceRange: "R$80,00\nR$180,00",
-    image: "https://i.pinimg.com/236x/b2/4a/2b/b24a2b5e6debcf999eeb2c8eb6df478f.jpg",
+    image: "https://i.pinimg.com/736x/b2/4a/2b/b24a2b5e6debcf999eeb2c8eb6df478f.jpg",
     styles: [37, 28],
     stores: [
       {
@@ -300,7 +300,7 @@ const products = [
     id: 12,
     name: "Camisa Executiva Formal",
     priceRange: "R$90,00\nR$200,00",
-    image: "https://i.pinimg.com/236x/11/09/ff/1109ff0708ee646d14210ec73c9cbe15.jpg",
+    image: "https://i.pinimg.com/736x/11/09/ff/1109ff0708ee646d14210ec73c9cbe15.jpg",
     styles: [23, 14],
     stores: [
       {
@@ -327,7 +327,7 @@ const products = [
     id: 13,
     name: "Saia High Fashion Glam",
     priceRange: "R$120,00\nR$250,00",
-    image: "https://i.pinimg.com/236x/3d/77/ac/3d77ac34f3e6055ceba0b2ab95a5b672.jpg",
+    image: "https://i.pinimg.com/736x/3d/77/ac/3d77ac34f3e6055ceba0b2ab95a5b672.jpg",
     styles: [36, 26],
     stores: [
       {
@@ -354,7 +354,7 @@ const products = [
     id: 14,
     name: "Calça Alternativa Cibercultura",
     priceRange: "R$70,00\nR$140,00",
-    image: "https://i.pinimg.com/236x/0e/70/a4/0e70a41608afaf2340467f4dde37e6e1.jpg",
+    image: "https://i.pinimg.com/736x/0e/70/a4/0e70a41608afaf2340467f4dde37e6e1.jpg",
     styles: [29, 35],
     stores: [
       {
@@ -381,7 +381,7 @@ const products = [
     id: 15,
     name: "Camisa Casual Preppy",
     priceRange: "R$40,00\nR$90,00",
-    image: "https://i.pinimg.com/236x/b3/e3/27/b3e327727d75e7d8959c72774a0a365e.jpg",
+    image: "https://i.pinimg.com/736x/b3/e3/27/b3e327727d75e7d8959c72774a0a365e.jpg",
     styles: [4, 10],
     stores: [
       {
@@ -408,7 +408,7 @@ const products = [
     id: 16,
     name: "Blusa Lingerie Glam Rock",
     priceRange: "R$30,00\nR$100,00",
-    image: "https://i.pinimg.com/236x/d1/50/bf/d150bfb5e79d98a80388cbcae4abc97f.jpg",
+    image: "https://i.pinimg.com/736x/d1/50/bf/d150bfb5e79d98a80388cbcae4abc97f.jpg",
     styles: [26, 40, 33],
     stores: [
       {
@@ -435,7 +435,7 @@ const products = [
     id: 17,
     name: "Camisa Hipster Retro",
     priceRange: "R$50,00\nR$110,00",
-    image: "https://i.pinimg.com/564x/bf/54/2e/bf542ec26d688fc2b6143616b1295b0e.jpg",
+    image: "https://i.pinimg.com/736x/bf/54/2e/bf542ec26d688fc2b6143616b1295b0e.jpg",
     styles: [13, 16],
     stores: [
       {
@@ -462,7 +462,7 @@ const products = [
     id: 18,
     name: "Camisa Punk Gótico",
     priceRange: "R$40,00\nR$120,00",
-    image: "https://i.pinimg.com/236x/39/52/4e/39524e08367ccea0d48b6dfcb1b53f89.jpg",
+    image: "https://i.pinimg.com/736x/39/52/4e/39524e08367ccea0d48b6dfcb1b53f89.jpg",
     styles: [12, 11],
     stores: [
       {
@@ -489,7 +489,7 @@ const products = [
     id: 19,
     name: "Vestido Carnaval Praia",
     priceRange: "R$60,00\nR$140,00",
-    image: "https://i.pinimg.com/236x/a2/ef/12/a2ef12505ad9ab6992632c13b0a2da46.jpg",
+    image: "https://i.pinimg.com/736x/a2/ef/12/a2ef12505ad9ab6992632c13b0a2da46.jpg",
     styles: [6, 22],
     stores: [
       {
