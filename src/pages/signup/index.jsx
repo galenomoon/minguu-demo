@@ -19,7 +19,7 @@ export default function SignUpPage() {
       <Link href="/">
         <PiArrowLeftLight size={38} />
       </Link>
-      <h1 className="font-bold text-5xl">
+      <h1 className="font-semibold text-5xl">
         Seja bem <br />
         vindo!
       </h1>
