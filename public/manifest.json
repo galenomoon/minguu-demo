@@ -26,7 +26,7 @@
   "orientation": "portrait",
   "screenshots": [
     {
-     "src": "source/mingu-512x512.png",
+     "src": "assets/mingu-512x512.png",
       "sizes": "640x320",
       "type": "image/png",
       "form_factor": "wide",
