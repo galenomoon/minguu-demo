@@ -11,6 +11,7 @@ import bg from "../../public/assets/mingu-black-background.png";
 import { MdDownload } from "react-icons/md";
 import { CgSpinner } from "react-icons/cg";
 import { usePWAInstall } from "react-use-pwa-install";
+import Link from "next/link";
 
 export default function Home() {
   const install = usePWAInstall()
@@ -43,11 +44,11 @@ export default function Home() {
               <CgSpinner size={32} className="animate-spin" />
             }
           </button>
-          <a
+          <Link
             href="/signup"
             className="w-full font-normal text-lg flex items-center justify-center">
             comece agora
-          </a>
+          </Link>
         </section>
       </section>
     </main>
