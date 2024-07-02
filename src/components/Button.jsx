@@ -10,7 +10,7 @@ export default function Button({ children, className = "", href = "" }) {
         className
       }
     >
-      <p>{children}</p>
+      {children}
     </Link>
   );
 }

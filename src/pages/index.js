@@ -2,13 +2,18 @@ import React from "react";
 
 //components
 import Image from "next/image";
-import Button from "@/components/Button";
 
 //assets
 import logo from "../../public/assets/mingu-black-logo.png";
 import bg from "../../public/assets/mingu-black-background.png";
 
+//libs
+import { MdDownload } from "react-icons/md";
+import { CgSpinner } from "react-icons/cg";
+import { usePWAInstall } from "react-use-pwa-install";
+
 export default function Home() {
+  const install = usePWAInstall()
 
   return (
     <main className="px-3 py-12 flex flex-col gap-12 h-[100dvh] relative">
@@ -26,14 +31,23 @@ export default function Home() {
           </h1>
         </div>
         <section className="flex w-full bg-light-gray rounded-full">
-          <Button href="/signup" className="w-full !font-normal !lowercase" >
-            sou novo por aqui
-          </Button>
-          <button
-            onClick={() => alert("Impossível ser fashion sem o Minguu")}
-            className="w-full font-normal text-lg">
-            já sou fashion
+          <button onClick={install} className="w-full !flex-row gap-2 !flex-nowrap flex items-center justify-center bg-primary text-white capitalize font-semibold text-lg p-3 rounded-full " >
+            {install ?
+              <>
+                <MdDownload size={32} />
+                <p>
+                  Baixar
+                </p>
+              </>
+              :
+              <CgSpinner size={32} className="animate-spin" />
+            }
           </button>
+          <a
+            href="/signup"
+            className="w-full font-normal text-lg flex items-center justify-center">
+            comece agora
+          </a>
         </section>
       </section>
     </main>
