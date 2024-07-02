@@ -5,6 +5,7 @@ export default function MultipleStyles({
   search = "",
   isRow = false,
   setStylesIds = () => {},
+  isCenter,
   stylesIds = [],
 }) {
   const [selectedStyles, setSelectedStyles] = useState([]);
@@ -46,14 +47,14 @@ export default function MultipleStyles({
     <section
       className={`flex gap-2 w-full my-2 ${
         isRow ? "!flex-no-wrap overflow-x-auto h-[50px]" : "flex-wrap !h-fit"
-      } ${hasStylesIds ? "justify-center" : "justify-start"}`}
+      } ${(hasStylesIds || isCenter) ? "justify-center" : "justify-start"}`}
     >
       {styles.map((style) => {
         const isSelected = selectedStyles.includes(style.id);
 
         return (
           <button
-            onClick={() => (hasStylesIds ? {} : handleSelectStyle(style))}
+            onClick={() => ((hasStylesIds || isCenter) ? {} : handleSelectStyle(style))}
             key={style.id}
             className={
               "border-2 font-mono font-medium rounded-full h-fit text-nowrap whitespace-nowrap px-2 py-1 " +

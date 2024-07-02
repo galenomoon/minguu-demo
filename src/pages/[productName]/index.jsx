@@ -10,6 +10,7 @@ import { useParams } from "next/navigation";
 
 //mocks
 import products from "@/mocks/products-mock";
+import Link from "next/link";
 
 export default function ProductPage() {
   const { productName } = useParams() || {};
@@ -49,12 +50,13 @@ export default function ProductPage() {
         </p>
         <div className="flex  gap-2 w-full flex-wrap items-center justify-center">
           {product?.stores?.map((store) => (
-            <button
+            <Link
+              href={'/store'}
               key={store.id}
               className="border-2 font-mono font-medium rounded-full h-full w-fit text-nowrap whitespace-nowrap px-2 py-1"
             >
               {store.name} - {store.price}
-            </button>
+            </Link>
           ))}
         </div>
       </section>

@@ -26,13 +26,13 @@ export default function ProductGrid({ stylesIds = [] }) {
         <Link
           href={`/${product.name}`}
           key={product.id}
-          className="relative flex  rounded-3xl "
+          className="relative flex max-h-[200px] rounded-3xl "
         >
           <img
             key={product.id}
             src={product.image}
             alt={product.name}
-            className="w-full  object-cover rounded-3xl"
+            className="w-full object-cover rounded-3xl"
           />
           <div className="absolute rounded-3xl z-20 w-full bg-gradient-to-b px-4 py-2 from-black/5 to-black/80 h-full flex flex-col items-center justify-end">
             <p className="text-[14px] leading-4 font-mono text-white">

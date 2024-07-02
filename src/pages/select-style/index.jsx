@@ -37,7 +37,7 @@ export default function SelectStyle() {
           />
         </section>
         <section className="min-h-[60dvh]">
-          <MultipleStyles />
+          <MultipleStyles search={search} />
         </section>
         <Button href="/search" className="my-3">
           Próximo
