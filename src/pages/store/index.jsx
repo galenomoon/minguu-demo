@@ -17,7 +17,8 @@ export default function StorePage() {
       <section className="flex text-center flex-col items-center justify-center gap-2">
         <Image
           src={logo}
-          className="rounded-[42px] px-12 overflow-hidden w-full object-cover "
+          width={400}
+          className="rounded-[42px] mx-12 overflow-hidden w-[300px] object-contain h-fit "
           alt="product"
         />
         <p className="text-2xl font-light">em breve...</p>
