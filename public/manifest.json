@@ -23,5 +23,14 @@
   "background_color": "#FFFFFF",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "screenshots": [
+    {
+     "src": "source/mingu-512x512.png",
+      "sizes": "640x320",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Wonder Widgets"
+    }
+]
 }
