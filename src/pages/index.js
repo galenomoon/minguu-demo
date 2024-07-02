@@ -12,6 +12,7 @@ import { MdDownload } from "react-icons/md";
 import { CgSpinner } from "react-icons/cg";
 import { usePWAInstall } from "react-use-pwa-install";
 import Link from "next/link";
+import InstallPWA from "@/components/Test";
 
 export default function Home() {
   const install = usePWAInstall()
@@ -32,7 +33,7 @@ export default function Home() {
           </h1>
         </div>
         <section className="flex w-full bg-light-gray rounded-full">
-          <button onClick={install} className="w-full !flex-row gap-2 !flex-nowrap flex items-center justify-center bg-primary text-white capitalize font-semibold text-lg p-3 rounded-full " >
+          <InstallPWA onClick={install} className="w-full !flex-row gap-2 !flex-nowrap flex items-center justify-center bg-primary text-white capitalize font-semibold text-lg p-3 rounded-full " >
             {install ?
               <>
                 <MdDownload size={32} />
@@ -43,7 +44,7 @@ export default function Home() {
               :
               <CgSpinner size={32} className="animate-spin" />
             }
-          </button>
+          </InstallPWA>
           <Link
             href="/signup"
             className="w-full font-normal text-lg flex items-center justify-center">
